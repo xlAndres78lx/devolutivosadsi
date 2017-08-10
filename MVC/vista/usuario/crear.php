@@ -15,7 +15,7 @@
 		<div class="card">
 			<div class="card-content">
 				<div class="input-field col s6"><input type="text" class="validate" id="usu_id" placeholder="Número de identificación"></div>
-				<div class="input-field col s6"><input type="text" class="validate" id="usu_id" placeholder="Número de identificación"></div>	
+				<div class="input-field col s6"><input type="text" class="validate" id="usu_id" placeholder="Número de identificación"></div>
 			</div>
 		</div>
 	</div>

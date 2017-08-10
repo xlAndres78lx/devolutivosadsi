@@ -1,18 +1,18 @@
 <?php
 	session_start();
+	// Variables modulo/controlador/funcion
+	$modulo = isset($_GET['modulo']) ? strtolower($_GET['modulo']) : null;
+	$controlador = isset($_GET['controlador']) ? strtolower($_GET['controlador']) : null;
+	$funcion = isset($_GET['funcion']) ? strtolower($_GET['funcion']) : null;
 	// Includes
 	include_once 'lib/helpers.php';
 	include_once 'vista/template/head.php';
 	include_once 'vista/template/header.php';
 	include_once 'vista/template/sidebar-left.php';
 	// Modulos
-	if( !isset($_GET['modulo']) && !isset($_GET['controlador']) && !isset($_GET['funcion']) ){
-		
+	if( !isset($modulo) && !isset($controlador) && !isset($funcion) ){
+		echo "xd";
 	} else {
-		// Obtener modulo/controlador/funcion
-		$modulo=ucwords($_GET['modulo']);
-		$controlador=$_GET['controlador'];
-		$funcion=$_GET['funcion'];
 		// Verificar si existe el modulo
 		if (is_dir("controlador/$modulo")) {
 			// Verificar si existe el archivo controlador
