@@ -19,7 +19,7 @@ body {
 
 #page-wrapper {
     padding: 15px 15px;
-    min-height: 600px;
+    min-height: calc(100vh - 182px);
     background: #ececec;
 }
 #page-inner {
@@ -27,7 +27,7 @@ body {
     margin:10px 20px 10px 0px;
     background-color:transparent;
     padding: 15px 30px;
-    min-height:1200px;
+    min-height: calc(100vh - 182px);
 }
 .header .container-fluid{
 padding:0;
@@ -93,6 +93,7 @@ background-color: #075CB3;
 border-color: #075CB3;
 }
 .breadcrumb {padding: 10px 10px 10px 20px;margin-bottom: 0;list-style: none;border-radius: 0;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);box-shadow: 0 1px 1px rgba(0,0,0,.05);background: transparent;line-height: 20px;font-size: 13px;}
+.breadcrumb .active {color: #000; font-weight: bold;}
 .dropdown-menu>li>a {
   display: block;
   padding: 3px 20px;
@@ -547,7 +548,7 @@ line-height: 1.428571429;
      #page-wrapper{
                margin: 0 0 0 260px;
                padding: 0;
-               min-height: 1200px;
+               min-height: 100px;
     }
 	
 	
