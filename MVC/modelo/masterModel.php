@@ -1,5 +1,5 @@
 <?php
-include_once '../lib/config/conexion.php';
+include_once 'lib/config/conexion.php';
 
 class masterModel extends conexion{
 
