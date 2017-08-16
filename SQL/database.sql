@@ -35,7 +35,7 @@ PRIMARY KEY(usurol_id));
 
 
 CREATE TABLE equipo (
-  equ_id VARCHAR(10)  NOT NULL   AUTO_INCREMENT,
+  equ_id VARCHAR(10)  NOT NULL  ,
   equ_fechaentrada DATE  NOT NULL  ,
   equest_id INTEGER UNSIGNED  NOT NULL    ,
 PRIMARY KEY(equ_id)  ,
@@ -48,7 +48,7 @@ INDEX FKequipo_equest_id(equest_id),
 
 
 CREATE TABLE usuario (
-  usu_identificacion VARCHAR(15)  NOT NULL   AUTO_INCREMENT,
+  usu_identificacion VARCHAR(15)  NOT NULL  ,
   usu_nombre VARCHAR(30)  NOT NULL  ,
   usu_apellido VARCHAR(30)  NOT NULL  ,
   usu_telefono VARCHAR(20)  NOT NULL  ,
@@ -137,7 +137,7 @@ CREATE TABLE prestamoherramienta (
   her_id INTEGER UNSIGNED  NOT NULL  ,
   preher_fecha_entrega DATE  NULL  ,
   preher_hora_entrega TIME  NULL  ,
-  preher_observacion VARCHAR  NULL    ,
+  preher_observacion VARCHAR(250)  NULL    ,
 PRIMARY KEY(preher_id)  ,
 INDEX FKprestamoherramienta_her_id(her_id)  ,
 INDEX prestamoherramienta_FKIndex2(pre_id),
